@@ -34,7 +34,7 @@ body {
 }
 
 .chatbot header {
-  background: #39ff14;
+  background: #008080;
   padding: 16px;
   text-align: center;
   display: flex;
@@ -43,7 +43,7 @@ body {
 }
 
 .chatbot header h2 {
-  color: black;
+  color: white;
   font-size: 1.8rem;
   font-weight: 1000;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -67,7 +67,7 @@ body {
 }
 
 .chatbox::-webkit-scrollbar-thumb {
-  background-color: #39ff14;
+  background-color: #008080;
   border-radius: 10px;
 }
 
@@ -137,7 +137,7 @@ body {
 }
 
 .chat-input span {
-  color: #39ff14;
+  color: #008080;
   font-size: 1.35rem;
   cursor: pointer;
   height: 50px;
@@ -145,14 +145,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #39ff14;
+  border: 2px solid #008080;
   border-radius: 50%;
   transition: background-color 0.3s, color 0.3s, transform 0.3s, opacity 0.3s;
   opacity: 1;
 }
 
 .chat-input span:hover {
-  background-color: #39ff14;
+  background-color: #008080;
   color: black;
   transform: scale(1.2);
   font-size: 25px;
