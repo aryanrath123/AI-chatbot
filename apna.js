@@ -9,12 +9,13 @@ const inputInitHeight = chatInput.scrollHeight;
 const createChatLi = (message, className) => {
   const chatLi = document.createElement("li");
   chatLi.classList.add("chat", className);
-  let chatContent =
-    className === "outgoing"
-      ? `<p></p>`
-      : `<span class="material-symbols-outlined">smart_toy</span><p></p>`;
-  chatLi.innerHTML = chatContent;
-  chatLi.querySelector("p").textContent = message;
+
+  if (className === "incoming") {
+    chatLi.innerHTML = `<span class="material-symbols-outlined">smart_toy</span><p>${message}</p>`;
+  } else {
+    chatLi.innerHTML = `<p>${message}</p>`;
+  }
+
   return chatLi;
 };
 
